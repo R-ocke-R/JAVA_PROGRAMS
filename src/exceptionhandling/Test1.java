@@ -30,15 +30,17 @@ class arr{
     }
     public void display(){
         System.out.println("Enter the index of the element you want to access");
+        sc.next();
         int q=sc.nextInt();
         try {
             System.out.println("The Element at index "+q+"= "+a[q]);
             System.out.println("Array Element Successfully Accessed");
         }
-        catch (ArrayIndexOutOfBoundsException pp){
+        catch (ArrayIndexOutOfBoundsException |InputMismatchException pp){
             System.out.println("Please enter index in range");
             System.out.println("INDEX RANGE ="+(a.length-1));
         }
+
     }
 }
 
