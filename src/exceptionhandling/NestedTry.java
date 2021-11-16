@@ -4,6 +4,8 @@ public class NestedTry {
     public static void main(String args[]){
         //outer try block
         try{
+           // **********************************************
+
             //inner try block 1
             try{
                 System.out.println("going to divide by 0");
@@ -14,7 +16,7 @@ public class NestedTry {
             {
                 System.out.println(e);
             }
-
+//          ***************************************************
 
             //inner try block 2
             try{
@@ -29,7 +31,7 @@ public class NestedTry {
             {
                 System.out.println(e);
             }
-
+//      *************************************************************
 
             System.out.println("other statement");
         }
