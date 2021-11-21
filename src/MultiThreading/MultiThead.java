@@ -10,7 +10,13 @@ package MultiThreading;
  -> It will increase the performance.
 
  -> We can apply thread by two ways:
-    1) Thread class
+    1) Thread class:
+    Type of constructor in thread class--:
+     1) Thread()
+     2) Thread(String name)
+     3) Thread(Runnable r)
+     4) Thread(Runnable r,String name)
+
     2) Runnable Interface
 
  -> STEPS TO CREATE MULTITHREADED APPLICATION (using Thread class)-
@@ -37,7 +43,7 @@ Step 3) create the object of the class
        Thread obj = new class_name();  // Polymorphic behaviour
 
 Step 4) call the start method
-      obj.start();  (It is in Thread class) //if we dont use start method then our application will not be multithreaded.
+      obj.start();  (It is in Thread class) //if we don't use start method then our application will not be multithreaded.
       we can override but we did't do this because it will not run it default behaivour and not register are
       thread to thread schudeuler.
 
@@ -48,9 +54,11 @@ class_name (My class)
 
 State in multithreading:
 1-new/born state
-2-running state
-3-dead/terminated
+2-runable
+3-running state
 4-block state
+5-dead/terminated
+
 
 Q) lifecycle of the thread?
 */
