@@ -2,7 +2,8 @@ package MultiThreading;
 /*
    Multitasking : Execute Multiple tasks Simultaneously
 
-  -> Two type: 1)Processed based
+  -> Multi-tasking is of Two type:
+             1)Processed based
              2)Thread based
 
  -> Small individual units of process is called threads.
