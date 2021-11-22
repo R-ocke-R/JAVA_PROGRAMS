@@ -10,7 +10,7 @@ public class GetBit {
     public static void main(String[] args) {
         int a =5;
         int pos=2;
-       int bit_mask=5<<pos;
+       int bit_mask=1<<pos;
         a=a&bit_mask;
         if (a>0)
             System.out.println("Bit is 1");
