@@ -14,11 +14,6 @@ public class Joinmethod {
         Test t3 = new Test();
 
         t1.start();
-//        try {
-//            t1.join();
-//        } catch (InterruptedException e) {
-//            System.out.println(e);
-//        }
         t2.start();
         t3.start();
     }

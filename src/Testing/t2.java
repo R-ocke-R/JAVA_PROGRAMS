@@ -1,30 +1,28 @@
 package Testing;
 
-import java.io.*;
-class Result {
+import FunctionOverloading.TestHericalInriretance;
 
-    public static void solve(double meal_cost, int tip_percent, int tax_percent) {
-        // Write your code here
-        double tip=( (double) tip_percent/100)*meal_cost;
-        System.out.println(tip);
-        double tax= ((double) tax_percent/100)*meal_cost;
-        System.out.println(tax);
-        double total=tip+tax+meal_cost;
-        System.out.println((Math.round(total)));
+class Test extends Thread{
+    public void run(){
+        for (int i = 0; i < 3; i++) {
+            System.out.println("naman"+i);
+        }
     }
 }
 public class t2 {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String[] args) {
+        Test t1 = new Test();
+        Test t2 = new Test();
+        Test t3 = new Test();
 
-        double meal_cost = 10.25;
+        try {
+            t1.join();
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
 
-        int tip_percent = 17;
-
-        int tax_percent = 5;
-
-        Result.solve(meal_cost, tip_percent, tax_percent);
-
-        bufferedReader.close();
+        t1.start();
+        t2.start();
+        t3.start();
     }
 }

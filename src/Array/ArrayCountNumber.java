@@ -1,5 +1,6 @@
 package Array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 //count the element occurrence.
@@ -29,13 +30,29 @@ class Test12{
     }
     public  void count(){
         int count=0;
+        System.out.println("Your Array is:");
+        for (var res : arr) {
+            System.out.print(res + " ");
+        }
+        System.out.println();
+        Arrays.sort(arr);
+        int flag =0;
         for (int i = 0; i < arr.length; i++) {
-            
+            int counte=0;
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i]==arr[j]) {
+                    counte++;
+                    flag++;
+                }
+            }
+            System.out.println("Occurence of "+arr[i]+"= "+counte);
+            i=flag-1;
         }
     }
 }
 public class ArrayCountNumber {
     public static void main(String[] args) {
         Test12 tt = new Test12();
+        tt.count();
     }
 }
