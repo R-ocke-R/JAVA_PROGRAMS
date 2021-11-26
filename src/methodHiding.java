@@ -37,7 +37,7 @@ public class methodHiding {
        ss s =new ss();
        f.m1();
        s.m1();
-       f fs = new ss();
+        f fs = new ss();
        f.m1();
     }
 }
