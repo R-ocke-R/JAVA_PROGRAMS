@@ -2,27 +2,25 @@ package Testing;
 
 import FunctionOverloading.TestHericalInriretance;
 
-class Test extends Thread{
-    public void run(){
-        for (int i = 0; i < 3; i++) {
-            System.out.println("naman"+i);
-        }
+class pen{
+    String n;
+    String b;
+    public void m1(){
+        System.out.println(n);
+        System.out.println(b);
     }
 }
 public class t2 {
     public static void main(String[] args) {
-        Test t1 = new Test();
-        Test t2 = new Test();
-        Test t3 = new Test();
+        pen p1 = new pen();
+        pen p2 = new pen();
+        p1.n ="nam";
+        p1.b="nam";
 
-        try {
-            t1.join();
-        } catch (InterruptedException e) {
-            System.out.println(e);
-        }
+        p2.n="nam2";
+        p2.b="nam2";
+        p1.m1();
+        p2.m1();
 
-        t1.start();
-        t2.start();
-        t3.start();
     }
 }
