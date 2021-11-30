@@ -3,8 +3,8 @@ package Project;
 import java.sql.*;
 import java.util.Scanner;
 
-public class Project1 {
-    public void m1() {
+public class Project1 extends Project1Insert{
+    public void getinfo()  {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException c) {
