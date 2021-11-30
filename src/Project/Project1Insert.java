@@ -3,7 +3,7 @@ package Project;
 import java.sql.*;
 import java.util.Scanner;
 
-public class Project1Insert {
+public class Project1Insert extends Project1Delete {
     public  void insertinfo() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
