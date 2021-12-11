@@ -11,9 +11,9 @@ public class Project1Insert extends Project1Delete {
             System.out.println(c);
         }
         Scanner sc = new Scanner(System.in);
-        try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project1", "root", "");
-            PreparedStatement ps = con.prepareStatement("insert into employee values (?,?,?,?,?,?,?,?)");
+        try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project1", "root", "");
+             PreparedStatement ps = con.prepareStatement("insert into employee values (?,?,?,?,?,?,?,?)");){
+
             System.out.println("Enter Employee Code");
             int empcode= sc.nextInt();
             ps.setInt(1,empcode);

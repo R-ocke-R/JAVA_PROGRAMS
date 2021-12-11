@@ -18,7 +18,7 @@ public class Project1Main {
                 System.out.print("Enter : ");
                 int a = c.nextInt();
                 switch (a) {
-                    case 1 -> p1.getinfo();
+                    case 1 ->p1.getinfo();
 
                     case 2 -> p1.insertinfo();
 

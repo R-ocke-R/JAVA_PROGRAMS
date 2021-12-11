@@ -5,6 +5,7 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class Project1 extends Project1Insert {
+    public static int naman;
     public void getinfo() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -17,6 +18,8 @@ public class Project1 extends Project1Insert {
             System.out.println();
             System.out.println("Enter Emp Number:");
             int a = sc.nextInt();
+            naman=a;
+             Project1Check.check();
             System.out.println();
             if (a > 0) {
                 ResultSet r1 = s.executeQuery("select * from employee where `Emp No.`=" + a);

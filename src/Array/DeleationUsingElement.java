@@ -42,7 +42,7 @@ class test87{
                     }
                     count++;
                     n--;
-                    j=0;
+                    j--;
                 }
             }
             System.out.println("Now Your Array is:");
