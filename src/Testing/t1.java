@@ -25,13 +25,32 @@ package Testing;
 //
 //            }
 //}
-public class t1{
+public class t1 {
     public static void main(String[] args) {
-        for (int i = 0; i < 5; i++) {
-            System.out.println(i);
-            i=2;
-            System.out.println(i);
-            System.out.println("Naman");
-        }
+        int w = 14;
+        Integer s = 58;
+        int t =s;
+        Integer.parseInt("525");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

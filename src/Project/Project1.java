@@ -6,14 +6,14 @@ import java.util.Scanner;
 
 public class Project1 extends Project1Insert {
     public static int naman;
-    public void getinfo() {
+    public static void getinfo() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException c) {
             System.out.println(c);
         }
         Scanner sc = new Scanner(System.in);
-        try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project1", "root", "");
+        try (Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/prog1", "root", "naman123");
              Statement s = con.createStatement();) {
             System.out.println();
             System.out.println("Enter Emp Number:");
@@ -79,5 +79,9 @@ public class Project1 extends Project1Insert {
         } catch (Exception s) {
             System.out.println(s);
         }
+    }
+
+    public static void main(String[] args) {
+        getinfo();
     }
 }
