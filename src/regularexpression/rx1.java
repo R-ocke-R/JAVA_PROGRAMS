@@ -5,8 +5,8 @@ import java.util.regex.Pattern;
 
 public class rx1 {
     public static void main(String[] args) {
-        Pattern p = Pattern.compile("ab");
-        Matcher m = p.matcher("ababbaba");
+        Pattern p = Pattern.compile("[a-z]");
+        Matcher m = p.matcher("naamn");
         int c = 0;
         while (m.find()){
             c++;  // count how many it occure .
