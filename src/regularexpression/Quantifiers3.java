@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class Quantifiers3 {
     public static void main(String[] args) {
-        String target = "dbmms bhjbf758vh dbms bfjhb33567f d485bm3533s876 nmmmmkjkhiu75683dbms";
+        String target = "dbmms bhjbf758";
         Pattern p = Pattern.compile("m?"); //two digit together
 
         Matcher m = p.matcher(target);

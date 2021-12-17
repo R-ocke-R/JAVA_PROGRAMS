@@ -3,10 +3,10 @@ package regularexpression;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class rx2 {
+public class rx3 {
     public static void main(String[] args) {
-        Pattern p = Pattern.compile("[^a-zA-Z0-9]");
-        Matcher m = p.matcher("a$5g^41rtb58c#@");
+        Pattern p = Pattern.compile(".");
+        Matcher m = p.matcher("ab ab baba");
         int c = 0;
         while (m.find()){
             c++;
